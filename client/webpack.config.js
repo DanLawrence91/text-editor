@@ -28,10 +28,13 @@ module.exports = () => {
       new WebpackPwaManifest({
         name: "Just Another Text Editor",
         short_name: "JATE",
-        description: "Text editor to be used on- and off-line",
-        crossorigin: "use-credentials",
+        description: "Takes notes with JavaScript syntax highlighting!",
         display: "standalone",
         orientation: "portrait",
+        background_color: "#225ca3",
+        theme_color: "#225ca3",
+        start_url: "/",
+        publicPath: "/",
         icons: [
           {
             src: path.resolve("src/images/logo.png"),
